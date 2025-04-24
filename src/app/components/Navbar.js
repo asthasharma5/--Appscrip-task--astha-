@@ -8,7 +8,7 @@ export default function Navbar() {
   <div className="navbar-top">
     <div className="navbar-top-left">
       <span className="hamburger">&#9776;</span> {/* ☰ */}
-      <Image src="/images/logo.png" alt="Logo" width={36} height={36} />
+      <Image src="/images/logoImage.png" alt="Logo" width={36} height={36} />
     </div>
     <h1 className="navbar-logo">LOGO</h1>
     <div className="icons">
