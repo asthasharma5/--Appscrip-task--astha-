@@ -1,0 +1,116 @@
+.footer {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    padding: 40px 20px;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .newsletter {
+    flex: 1;
+    min-width: 260px;
+  }
+  
+  .newsletter h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .subscribe {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .subscribe input {
+    padding: 12px;
+    flex: 1;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .subscribe button {
+    padding: 12px 20px;
+    border: 1px solid #777;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .contact-currency {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 240px;
+  }
+  
+  .contact-currency h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .currency-note {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .divider {
+    border-top: 1px solid #888;
+    margin: 30px 0;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .footer-bottom > div {
+    min-width: 200px;
+  }
+  
+  .footer-bottom h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-bottom ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    cursor: pointer;
+  }
+  
+  .footer-social .social-icons span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .payments img {
+    height: 30px;
+    margin: 8px 8px 0 0;
+  }
+  
+  .footer p {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+    color: #aaa;
+  }
+  

@@ -1,0 +1,128 @@
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  font-family: sans-serif;
+}
+
+/* Top Section */
+.navbar-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.navbar-top-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Center Logo */
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+}
+
+/* Icons on Right */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons span {
+  cursor: pointer;
+  filter: brightness(0);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Main Nav Links */
+.navbar-main {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 15px 0;
+}
+
+.navbar-main a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Mobile Only: HOME | SHOP */
+.mobile-tabs {
+  display: none;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 768px) {
+  .navbar-top {
+    padding: 10px 20px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* ✅ SHOW LOGO in mobile center */
+  .navbar-logo {
+    display: block;
+    font-size: 24px;
+  }
+
+  .icons {
+    gap: 10px;
+  }
+
+  .icons span:nth-child(4), /* Profile */
+  .icons span:nth-child(5)  /* ENG ▼ */ {
+    display: none;
+  }
+
+  .navbar-main {
+    display: none;
+  }
+
+  .mobile-tabs {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .mobile-tabs span {
+    color: #999;
+  }
+
+  .mobile-tabs .active {
+    color: #000;
+    font-weight: 600;
+  }
+}
+
+/* Large screens: hide mobile tabs */
+@media (min-width: 769px) {
+  .mobile-tabs {
+    display: none;
+  }
+}
